@@ -1,3 +1,7 @@
+import sys
+sys.stdout = open('output.txt', 'w')
+sys.stdin = open('input.txt')
+
 # Part One
 t = 1000
 x, y = 0, 0
