@@ -1,3 +1,7 @@
+import sys
+sys.stdout = open('output.txt', 'w')
+sys.stdin = open('input.txt')
+
 # Part One
 nums = list(map(int, input().split(',')))
 boards = []
