@@ -1,3 +1,7 @@
+import sys
+sys.stdout = open('output.txt', 'w')
+sys.stdin = open('input.txt')
+
 # Part One
 from collections import Counter
 t = 1000
