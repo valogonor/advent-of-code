@@ -1,3 +1,7 @@
+import sys
+sys.stdout = open('output.txt', 'w')
+sys.stdin = open('input.txt')
+
 grid = [[0 for x in range(1000)] for y in range(1000)]
 for _ in range(500):
     a = input().split(' -> ')
