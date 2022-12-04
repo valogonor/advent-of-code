@@ -18,7 +18,7 @@ for line in lines:
 print(ans)
 
 # Part 2
-ans = 1000
+ans = len(lines)
 for line in lines:
     start1, end1, start2, end2 = process(line)
     if start1 > end2 or start2 > end1:
