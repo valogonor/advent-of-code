@@ -11,7 +11,6 @@ for line in lines:
         s = line[i+4:j]
         try:
             num1, num2 = s.split(",")
-            num1, num2 = num1.strip(), num2.strip()
         except:
             i = line[i+1:].index("mul(") + i + 1
             continue
