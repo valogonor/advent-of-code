@@ -41,7 +41,6 @@ for line in lines:
             s = line[i+4:j]
             try:
                 num1, num2 = s.split(",")
-                num1, num2 = num1.strip(), num2.strip()
             except:
                 continue
             if num1.isdigit() and num2.isdigit():
