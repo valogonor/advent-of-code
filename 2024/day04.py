@@ -5,7 +5,7 @@ with open('input.txt') as file:
 ans = 0
 m = len(lines[0])
 for line in lines:
-    n = len(lines)
+    n = len(line)
     for i in range(n):
         if line[i:i+4] == "XMAS":
             ans += 1
