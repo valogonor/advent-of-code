@@ -23,7 +23,7 @@ for j in range(m):
         elif col[i:i+4] == "SAMX":
             ans += 1
 for i in range(n):
-    for j in range(n):
+    for j in range(m):
         word = lines[i][j]
         r, c = i, j
         while len(word) < 4:
