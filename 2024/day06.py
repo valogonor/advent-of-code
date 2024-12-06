@@ -57,6 +57,6 @@ def isloop(i, j):
 ans = 0
 for i in range(n):
     for j in range(m):
-        if lines[i][j] == "." and (i, j) in seen and isloop(i, j):
+        if (i, j) in seen and isloop(i, j):
             ans += 1
 print(ans)
