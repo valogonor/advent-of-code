@@ -29,7 +29,6 @@ for i, c in enumerate(disk):
 print(ans)
 
 # Part 2
-# TODO: Fix bugs
 for line in lines:
     disk = []
     for i, c in enumerate(line):
@@ -38,8 +37,6 @@ for line in lines:
             disk.extend([str(i//2)] * num)
         else:
             disk.extend(['.'] * num)
-print(len(disk))
-print(disk[:100])
 l, r = 0, len(disk) - 1
 disk = list(disk)
 while l < r:
@@ -56,7 +53,7 @@ while l < r:
                 disk[i], disk[j] = disk[j], disk[i]
                 j += 1
             r -= 1
-            l += 1
+            l = disk.index(".")
         else:
             l += 1
             while disk[r] != "." and r + 1 < len(disk) and disk[r+1] == disk[r]:
@@ -67,7 +64,6 @@ while l < r:
     r -= 1
     while disk[r] == ".":
         r -= 1
-print(disk[:100])
 ans = 0
 for i, c in enumerate(disk):
     if c == '.':
